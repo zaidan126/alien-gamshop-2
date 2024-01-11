@@ -48,4 +48,8 @@ public class switch_camera : MonoBehaviour
             window.enabled = true;
         }
     }
+    public void togglecams()
+    {
+
+    }
 }
