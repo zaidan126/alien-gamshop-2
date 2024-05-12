@@ -48,8 +48,40 @@ public class switch_camera : MonoBehaviour
             window.enabled = true;
         }
     }
+    public int camnum = 1;
     public void togglecams()
     {
-
-    }
-}
+        if (camnum == 1)
+        {
+            wide.enabled = true;
+            character.enabled = false;
+            closeup.enabled = false;
+            window.enabled = false;
+            camnum += 1;
+        }
+        else if (camnum == 2)
+        {
+            wide.enabled = false;
+            character.enabled = true;
+            closeup.enabled = false;
+            window.enabled = false;
+            camnum += 1;
+        }
+        else if (camnum == 3)
+        {
+            wide.enabled = false;
+            character.enabled = false;
+            closeup.enabled = true;
+            window.enabled = false;
+            camnum += 1;
+        }
+        else if (camnum == 4)
+        {
+            wide.enabled = false;
+            character.enabled = false;
+            closeup.enabled = false;
+            window.enabled = true;
+            camnum = 1;
+        }
+    }    }     
+        
